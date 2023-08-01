@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int Nhap()
+{
+	int x;
+	do
+	{
+		cin >> x;
+		if (x < 0)
+			cout << "Nhập sai!";
+	} while (x < 0);
+	return x;
+}
+double Tinh(int n)
+{
+	float s = 0, t = 0;
+	long p = 1;
+	for (int i = 1; i <= n; i++)
+	{
+		t = t + i;
+		p = p * i;
+		s = s + (double)t / p;
+	}
+	return s;
+}
+int main()
+{
+	int n; 
+	cout << "Nhập số n: ";
+	n = Nhap();
+	cout << "Kết quả là: "<< Tinh(n) << endl;
+	return 0;
+}
