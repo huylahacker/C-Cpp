@@ -1,2 +1,2 @@
 # C
-This is my project about C and C++. Hope help everyone.
+This is my project about C.
